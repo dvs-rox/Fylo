@@ -1,0 +1,30 @@
+.app-header{
+    grid-column: 1 / -1;
+    padding-inline: 80px;
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    img{
+        margin-block-start: auto;
+        height: 52px;
+        justify-self: end;
+    }
+    ul{
+        margin-block-start: auto;
+    }
+    li{
+        font-family: raleway;
+        font-weight: 200;
+        display: inline;
+        font-size: 16px;
+        margin-inline-start: 57px;
+    }
+    a{
+        text-decoration: none;
+        color:$main-font-color;
+        // &:visited{
+        //     text-decoration: none;
+        // }
+    }
+}

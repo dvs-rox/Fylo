@@ -1,0 +1,49 @@
+.app-footer{
+    grid-column: 1 / -1;
+    background-color: $footer-background-color;
+    height: 520px;
+    font-family: openSans;
+    margin-block-start: 360px;
+    padding-inline: 80px;
+    .info{
+        margin-block-start: 200px;
+    }
+}
+.lists-container{
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    img{
+        padding-inline-end: 1rem;
+    }
+    .location{
+        display: flex;
+        flex-direction: row;
+        p{
+            max-width: 340px;
+        }
+        img{
+            width: 13px;
+            height: 18px;
+        }
+    }
+    li{
+        margin-block-end: 1rem;
+    }
+    .socials{
+        display: flex;
+        gap: 12px;
+        div{
+            height: 32px;
+            width: 32px;
+            border: 1px solid #dfe4f0;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            padding: 0;
+        }
+    }
+}

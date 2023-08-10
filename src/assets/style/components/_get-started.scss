@@ -1,0 +1,36 @@
+.get-started {
+    display: grid;
+    grid-column: 1 /-1;
+    justify-items: center;
+    padding-block-start: 75px;
+    background-color: $background-color;
+    gap: 0px;
+    img {
+        justify-self: center;
+        width: 720px;
+        height: 534px;
+    }
+
+    >* {
+        text-align: center;
+        z-index: 3;
+    }
+
+    h1 {
+        margin-block-start: 36px;
+        max-width: 735px;
+        font-size: 40px;
+        font-family: raleway;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    p{
+        margin-block-start: 38px;
+        max-width: 590px;
+        font-weight: 400;
+        font-family: openSans;
+    }
+    button{
+        margin-block-start: 34px;
+    }
+}

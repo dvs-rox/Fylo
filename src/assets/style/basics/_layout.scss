@@ -1,0 +1,17 @@
+.main-layout{
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    // background-image: url('../../img/bg-curvy-desktop.svg');
+    .app-header{
+        // grid-column: 2 / 3;
+    }
+}
+.curvy{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    top: 500px;
+    img{
+        width: 100vw;
+    }
+}
