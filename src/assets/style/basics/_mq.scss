@@ -5,9 +5,26 @@
         grid-template-columns: 24px 1fr 24px;
     }
 
+    //curvy
+    .curvy {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        top: 500px;
+
+        img {
+            width: 100vw;
+        }
+    }
+
     //header
     .app-header {
-        padding-inline: 80px;
+        padding-inline: 24px;
+        height: 45px;
+
+        img {
+            height: 24px;
+        }
 
         li {
             font-size: 12px;
@@ -83,9 +100,21 @@
                 width: 280px;
                 height: 160px;
             }
-            p{
+
+            p {
                 font-size: 10px;
             }
+        }
+    }
+
+    //app footer
+    .app-footer {
+        height: fit-content;
+
+        .lists-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
         }
     }
 }
@@ -97,9 +126,26 @@
         grid-template-columns: 80px 1fr 80px;
     }
 
+    //curvy
+    .curvy {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        top: 500px;
+
+        img {
+            width: 100vw;
+        }
+    }
+
     //header
     .app-header {
         padding-inline: 80px;
+        height: 125px;
+
+        img {
+            height: 52px;
+        }
 
         li {
             font-size: 16px;
@@ -110,14 +156,14 @@
     //get started
     .get-started {
         img {
-            grid-row: 1 / -1;
+            // grid-row: 1 / -1;
             width: 720px;
             height: 534px;
         }
 
         h1 {
-            grid-column: 2 / -1;
-            grid-row: 1;
+            // grid-column: 2 / -1;
+            // grid-row: 1;
             max-width: 735px;
             font-size: 40px;
             line-height: 60px;
@@ -149,15 +195,24 @@
         grid-template-rows: 1fr 1fr;
 
         img {
+            grid-row: 1 / -1;
+
             width: 615px;
             height: 464px;
         }
 
         h1 {
+            grid-column: 2 / -1;
+            grid-row: 1;
             max-width: 500px;
             font-size: 40px;
             line-height: 50px;
             text-align: left;
+        }
+
+        div {
+            grid-column: 2 / -1;
+            grid-row: 2;
         }
     }
 
@@ -174,9 +229,21 @@
                 width: 360px;
                 height: 200px;
             }
-            p{
+
+            p {
                 font-size: 16px;
             }
+        }
+    }
+
+    //app footer
+    .app-footer {
+        height: 520px;
+
+        .lists-container {
+            display: grid;
+            grid-template-columns: 2fr repeat(4, 1fr);
+            grid-template-rows: 1fr;
         }
     }
 }
